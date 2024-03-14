@@ -1,0 +1,11 @@
+﻿@using AspNetCoreMvcSharedLocalization.Resources
+
+@inject LocService SharedLocalizer
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    @SharedLocalizer.GetLocalizedHtmlString("Hello")
+</div>
